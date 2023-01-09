@@ -1,0 +1,9 @@
+---
+base_url: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+client_id: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+client_secret: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+customer_id: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+username: "me@me.com"
+password: "Ch@ng3Me!"
+dbuser: "appUser"
+dbpass: 'passwordForAppUser'
