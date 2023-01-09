@@ -30,7 +30,7 @@
 #
 #------------------------------------------------------------------------------#
 
-from lib.actions import ArubCentralBaseAction
+from lib.actions import ArubaCentralBaseAction
 from pycentral.configuration import Groups
 import json
 
@@ -39,7 +39,7 @@ __all__ = [
     'AllGroups'
 ]
 
-class AllGroups(ArubCentralBaseAction):
+class AllGroups(ArubaCentralBaseAction):
     def run(self):
         all_groups = Groups()
 
