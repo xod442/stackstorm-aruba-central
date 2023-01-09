@@ -45,4 +45,4 @@ class AllGroups(ArubCentralBaseAction):
 
         response = all_groups.get_groups(conn=auth.token)
 
-    return(response['msg']['data'])
+        return(response['msg']['data'])
