@@ -31,8 +31,6 @@ Example configuration:
   customer_id: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   username: "me@me.com"
   password: "Ch@ng3Me!"
-  dbuser: "appUser"
-  dbpass: 'passwordForAppUser'
 ```
 You can also run `st2 pack config arubacentral` and answer the prompts
 
