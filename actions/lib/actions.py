@@ -49,7 +49,7 @@ class ArubaCentralBaseAction(Action):
         central_info['password'] = password
         central_info['customer_id'] = customer_id
         central_info['base_url'] = base_url
-        central_ino['refresh_token'] = refresh_token
+        central_info['refresh_token'] = refresh_token
         '''
         token_store = {
             "type": "local",
