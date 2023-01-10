@@ -20,6 +20,7 @@
 from pymongo import MongoClient
 from pycentral.base import ArubaCentralBase
 from st2common.runners.base_action import Action
+import json
 
 __all__ = [
     'ArubaCentralBaseAction'
@@ -57,6 +58,7 @@ class ArubaCentralBaseAction(Action):
         }
         '''
         ssl_verify = True
+        central_info = json.dumps(central_info)
         print(central_info)
         '''
         token = ArubaCentralBase(central_info=central_info,
