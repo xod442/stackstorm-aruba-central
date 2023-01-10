@@ -14,8 +14,7 @@ password - Password
 client_id - client ID from arubacentral
 client_secret - client_secret from arubacentral
 customer_id - from arubacentral
-dbuser  - Mongo database username
-dbpass - Mongo database password
+
 ```
 
 You can also use dynamic values from the datastore. See the
