@@ -48,6 +48,5 @@ class PostGroups(ArubaCentralBaseAction):
                                       wired_template=wired_template,
                                       wireless_template=wireless_template)
 
-        print(response)
 
-        return(response)
+        return(response['code'])
