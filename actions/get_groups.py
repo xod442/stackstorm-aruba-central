@@ -42,6 +42,7 @@ __all__ = [
 class AllGroups(ArubaCentralBaseAction):
     def run(self):
         all_groups = Groups()
+        print(self.auth)
 
         response = all_groups.get_groups(conn=self.auth)
 

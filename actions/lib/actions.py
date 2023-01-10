@@ -30,6 +30,7 @@ class ArubaCentralBaseAction(Action):
     def __init__(self, config):
         super(ArubaCentralBaseAction, self).__init__(config=config)
         self.auth = self._get_auth()
+        print(self.auth)
 
     def _get_auth(self):
         client_id = self.config['client_id']
@@ -38,6 +39,7 @@ class ArubaCentralBaseAction(Action):
         password = self.config['password']
         customer_id = self.config['customer_id']
         base_url = self.config['base_url']
+        refresh_token =self.config['refresh_token']
 
         # Create central_info dictionary
         central_info = {}
@@ -47,6 +49,7 @@ class ArubaCentralBaseAction(Action):
         central_info['password'] = password
         central_info['customer_id'] = customer_id
         central_info['base_url'] = base_url
+        central_ino['refresh_token'] = refresh_token
         '''
         token_store = {
             "type": "local",
@@ -61,6 +64,7 @@ class ArubaCentralBaseAction(Action):
         '''
         token = ArubaCentralBase(central_info=central_info,
                                    ssl_verify=ssl_verify)
+
         return token
 '''
 class MongoBaseAction(Action):
