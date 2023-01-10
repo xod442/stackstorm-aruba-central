@@ -45,4 +45,4 @@ class AllUsers(ArubaCentralBaseAction):
 
         response = all_users.get_users(conn=self.auth)
 
-        return(base_resp['msg']['items'][0])
+        return(response['msg']['items'][0])
