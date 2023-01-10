@@ -60,8 +60,7 @@ class ArubaCentralBaseAction(Action):
         ssl_verify = True
         central_info = json.dumps(central_info)
         print(central_info)
-        for key, value in central_info.iteritems():
-            print(key, value)
+        print(type(central_info))
         '''
         token = ArubaCentralBase(central_info=central_info,
                                         token_store=None,
