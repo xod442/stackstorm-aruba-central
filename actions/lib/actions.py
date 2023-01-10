@@ -47,18 +47,22 @@ class ArubaCentralBaseAction(Action):
         central_info['password'] = password
         central_info['customer_id'] = customer_id
         central_info['base_url'] = base_url
-
+        '''
         token_store = {
             "type": "local",
             "path": "temp"
         }
-
+        '''
         ssl_verify = True
+        '''
         token = ArubaCentralBase(central_info=central_info,
                                         token_store=None,
                                    ssl_verify=ssl_verify)
+        '''
+        token = ArubaCentralBase(central_info=central_info,
+                                   ssl_verify=ssl_verify)
         return token
-
+'''
 class MongoBaseAction(Action):
     def __init__(self, config):
         super(MongoBaseAction, self).__init__(config=config)
@@ -68,7 +72,6 @@ class MongoBaseAction(Action):
         # Uncomment dbuser & dbpass if using password protected mongo database
         # dbuser = self.config['dbuser']
         # dbpass = self.config['dbpass']
-
         # If running stackstorm in a singlehost deployment use this command
         # dbclient =
         # MongoClient('mongodb://%s:%s@localhost:27017/' % (dbuser,dbpass))
@@ -77,3 +80,4 @@ class MongoBaseAction(Action):
         dbclient = MongoClient('mongodb://mongo:27017/')
 
         return dbclient
+'''

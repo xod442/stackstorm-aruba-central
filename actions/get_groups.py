@@ -43,6 +43,6 @@ class AllGroups(ArubaCentralBaseAction):
     def run(self):
         all_groups = Groups()
 
-        response = all_groups.get_groups(conn=auth.token)
+        response = all_groups.get_groups(conn=self.token)
 
         return(response['msg']['data'])
