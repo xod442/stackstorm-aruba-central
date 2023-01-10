@@ -61,7 +61,7 @@ class ArubaCentralBaseAction(Action):
         central_info = json.dumps(central_info)
         print(central_info)
         for key, value in central_info.iteritems():
-            print key, value
+            print(key, value)
         '''
         token = ArubaCentralBase(central_info=central_info,
                                         token_store=None,
