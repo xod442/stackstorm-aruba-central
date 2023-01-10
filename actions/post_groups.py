@@ -50,4 +50,4 @@ class PostGroups(ArubaCentralBaseAction):
 
         print(response)
 
-        return(response['msg']['data'])
+        return(response)
