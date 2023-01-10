@@ -57,6 +57,7 @@ class ArubaCentralBaseAction(Action):
         }
         '''
         ssl_verify = True
+        print(central_info)
         '''
         token = ArubaCentralBase(central_info=central_info,
                                         token_store=None,
