@@ -51,21 +51,6 @@ Actions are defined in two groups:
 
 ### Orquestra Workflows: will not use underscore, dashes are used in the filename.
 
-### If using in Docker/Kubernetes
-
-This application uses the mongo db installed by StackStorm. Since the DB is secured
-you will need to log into the StackStorm mongo DB as a StackStorm admin and create a separate DB
-
-### Docker/Kubernetes database setup
-log in with admin first
---------------------------------------------------------------------------------------
-mongo -u admin -p UkIbDILcNbMhkh3KtN6xfr9h admin  (passwd in /etc/st2/st2.config)
-
-# Then create a new user
-db.createUser({user: "appUser",pwd: "passwordForAppUser",roles: [ { role: "readWrite", db: "app_db" } ]})
-
-# Then if necessary you can check the mongo database records by
-mongo -u appUser -p passwordForAppUser admin
 
 ### To get this pack to work with A SINGLE HOST DEPLOYMENT StackStorm mongo DB
 You can ignore this section when using StackStorm in docker containers. There is
