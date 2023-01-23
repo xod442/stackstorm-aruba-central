@@ -4,12 +4,9 @@ description: "A webhook to handle messages from aruba central`."
 enabled: false
 
 trigger:
-  type: "arubacentral.webhook"
-
-criteria:
-  trigger.attribute1:
-    type: "equals"
-    pattern: "value1"
+  type: "core.st2.webhook"
+  parameters:
+    url: "central"
 
 action:
-  ref: "arubacentral.webhook"
+  ref: "arubacentral.get_groups"
