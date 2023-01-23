@@ -1,0 +1,15 @@
+---
+name: "central-web-hook"
+description: "A webhook to handle messages from aruba central`."
+enabled: false
+
+trigger:
+  type: "arubacentral.webhook"
+
+criteria:
+  trigger.attribute1:
+    type: "equals"
+    pattern: "value1"
+
+action:
+  ref: "arubacentral.webhook"
