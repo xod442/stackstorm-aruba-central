@@ -1,6 +1,6 @@
 version: 1.0
 
-description: A workflow to copy aruba IMC realtime alarms into a mongo database.
+description: A workflow to copy realtime alarms into a mongo database.
 
 tasks:
   getalarms:
