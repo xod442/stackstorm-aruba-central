@@ -40,7 +40,7 @@ class ArubaCentralBaseAction(Action):
         password = self.config['password']
         customer_id = self.config['customer_id']
         base_url = self.config['base_url']
-        refresh_token =self.config['refresh_token']
+        
 
         # Create central_info dictionary
         central_info = {}
@@ -50,7 +50,6 @@ class ArubaCentralBaseAction(Action):
         central_info['password'] = password
         central_info['customer_id'] = customer_id
         central_info['base_url'] = base_url
-        central_info['refresh_token'] = refresh_token
 
         ssl_verify = True
         token = ArubaCentralBase(central_info=central_info,ssl_verify=ssl_verify)
